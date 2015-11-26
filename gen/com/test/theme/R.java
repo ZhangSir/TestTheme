@@ -223,6 +223,10 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
          */
         public static final int backgroundStacked=0x7f01002c;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int backgroundStyle=0x7f01006b;
         /**  A style that may be applied to Buttons placed within a
          LinearLayout with the style buttonBarStyle to form a button bar. 
          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
@@ -736,6 +740,10 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
          */
         public static final int textColorSearchUrl=0x7f010064;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int textStyle=0x7f01006a;
         /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -794,11 +802,23 @@ containing a value of this type.
         public static final int abc_split_action_bar_is_narrow=0x7f060002;
     }
     public static final class color {
-        public static final int abc_search_url_text_holo=0x7f070004;
+        public static final int abc_search_url_text_holo=0x7f070008;
         public static final int abc_search_url_text_normal=0x7f070000;
         public static final int abc_search_url_text_pressed=0x7f070002;
         public static final int abc_search_url_text_selected=0x7f070001;
         public static final int bg_listview=0x7f070003;
+        /**  蓝色 
+         */
+        public static final int blue=0x7f070006;
+        /**  绿色 
+         */
+        public static final int green=0x7f070005;
+        /**  橘黄色 
+         */
+        public static final int orange=0x7f070004;
+        /**  红色 
+         */
+        public static final int red=0x7f070007;
     }
     public static final class dimen {
         /**  Default height of an action bar. 
@@ -996,10 +1016,13 @@ containing a value of this type.
         public static final int action_menu_divider=0x7f050016;
         public static final int action_menu_presenter=0x7f050017;
         public static final int action_mode_close_button=0x7f050024;
-        public static final int action_settings=0x7f050040;
+        public static final int action_settings=0x7f050043;
         public static final int activity_chooser_view_content=0x7f050025;
         public static final int always=0x7f05000b;
         public static final int beginning=0x7f050011;
+        public static final int btn_switch=0x7f05003f;
+        public static final int btn_theme=0x7f05003d;
+        public static final int btn_theme_apk=0x7f05003e;
         public static final int checkbox=0x7f05002d;
         public static final int collapseActionView=0x7f05000d;
         public static final int container=0x7f05003c;
@@ -1016,10 +1039,10 @@ containing a value of this type.
         public static final int icon=0x7f05002a;
         public static final int ifRoom=0x7f05000a;
         public static final int image=0x7f050027;
-        public static final int iv_icon=0x7f05003e;
+        public static final int iv_icon=0x7f050041;
         public static final int listMode=0x7f050001;
         public static final int list_item=0x7f050029;
-        public static final int listview=0x7f05003d;
+        public static final int listview=0x7f050040;
         public static final int middle=0x7f050012;
         public static final int never=0x7f050009;
         public static final int none=0x7f050010;
@@ -1046,7 +1069,7 @@ containing a value of this type.
         public static final int tabMode=0x7f050002;
         public static final int title=0x7f05002b;
         public static final int top_action_bar=0x7f050020;
-        public static final int tv_name=0x7f05003f;
+        public static final int tv_name=0x7f050042;
         public static final int up=0x7f050021;
         public static final int useLogo=0x7f050003;
         public static final int withText=0x7f05000c;
@@ -1101,12 +1124,18 @@ containing a value of this type.
         public static final int abc_search_dropdown_item_icons_2line=0x7f030015;
         public static final int abc_search_view=0x7f030016;
         public static final int activity_main=0x7f030017;
-        public static final int fragment_main=0x7f030018;
-        public static final int layout_skin_list_item=0x7f030019;
-        public static final int support_simple_spinner_dropdown_item=0x7f03001a;
+        public static final int activity_theme=0x7f030018;
+        public static final int activity_theme_apk=0x7f030019;
+        public static final int fragment_main=0x7f03001a;
+        public static final int fragment_theme=0x7f03001b;
+        public static final int fragment_theme_apk=0x7f03001c;
+        public static final int layout_skin_list_item=0x7f03001d;
+        public static final int support_simple_spinner_dropdown_item=0x7f03001e;
     }
     public static final class menu {
         public static final int main=0x7f0c0000;
+        public static final int theme=0x7f0c0001;
+        public static final int theme_apk=0x7f0c0002;
     }
     public static final class string {
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 
@@ -1152,6 +1181,8 @@ containing a value of this type.
         public static final int action_settings=0x7f0a000f;
         public static final int app_name=0x7f0a000d;
         public static final int hello_world=0x7f0a000e;
+        public static final int title_activity_theme=0x7f0a0011;
+        public static final int title_activity_theme_apk=0x7f0a0010;
     }
     public static final class style {
         /** 
@@ -1177,13 +1208,9 @@ containing a value of this type.
          */
         public static final int AppBaseTheme=0x7f0b0083;
         /**  Application theme. 
-         <item name="textStyle">@style/text_style</item> 
-         <item name="backgroundStyle">@style/background_style</item> 
          */
         public static final int AppTheme=0x7f0b0084;
         /**  Application theme. 
-         <item name="textStyle">@style/text_light_style</item> 
-         <item name="backgroundStyle">@style/background_light_style</item> 
          */
         public static final int AppThemeLight=0x7f0b0087;
         /**  Mimic text appearance in select_dialog_item.xml 

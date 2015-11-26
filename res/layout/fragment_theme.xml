@@ -2,21 +2,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.test.theme.MainActivity$PlaceholderFragment" >
+    style="?backgroundStyle"
+    tools:context="com.test.theme.ThemeActivity$PlaceholderFragment" >
 
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="?textStyle"
+        android:text="看我的颜色有没有变"/>
+    
     <Button
-        android:id="@+id/btn_theme"
+        android:id="@+id/btn_switch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:text="Theme" />
-    
-    <Button
-        android:id="@+id/btn_theme_apk"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/btn_theme"
-        android:text="Theme APK" />
+        style="?textStyle"
+        android:text="切换Theme" />
 
 </RelativeLayout>

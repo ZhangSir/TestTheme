@@ -1,7 +1,15 @@
 # TestTheme
-这是一个通过安装主题apk，实现app主题动态切换的例子程序；
-
-##该程序的核心代码是：
+***这是一个实现app主题动态切换的例子程序，示例了两种方式；
+	1、通过切换app的Theme属性；
+	2、通过安装主题apk包实现切换；
+	
+##通过切换app的Theme属性实现主题动态切换的核心逻辑：
+	在Style中创建两套Theme（如appTheme和appThemeLight），在attr文件中创建需要的动态改变的属性（如backgroundStyle），
+	然后在前面以创建的Theme（appTheme和appThemeLight）中使用自定义的属性（backgroundStyle）；
+	最后在代码中通过context.setTheme(int resId)动态设置主题为自己创建某个主题（appTheme或appThemeLight）；
+	注意：context.setTheme(int resId)必须在Activity的setContentView()之前调用;
+	
+##通过安装主题apk包实现切换核心代码逻辑是：
 	1、查找所有与规定的主题apk包名相同的apk：
 	PackageManager pm = getActivity().getPackageManager();
 				List<PackageInfo> listPackages = pm.getInstalledPackages(PackageManager.PERMISSION_GRANTED);

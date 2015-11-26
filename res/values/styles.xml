@@ -14,16 +14,16 @@
 
     <!-- Application theme. -->
     <style name="AppTheme" parent="AppBaseTheme">
-<!--         <item name="textStyle">@style/text_style</item> -->
-<!--         <item name="backgroundStyle">@style/background_style</item> -->
+        <item name="textStyle">@style/text_style</item>
+        <item name="backgroundStyle">@style/background_style</item>
     </style>
 
     <style name="text_style">
-        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textColor">@color/orange</item>
     </style>
     
 	<style name="background_style">
-	    <item name="android:background">@android:color/background_dark</item>
+	    <item name="android:background">@color/blue</item>
 	</style>   
 	
 	
@@ -31,15 +31,15 @@
 	
 	<!-- Application theme. -->
     <style name="AppThemeLight" parent="AppBaseTheme">
-<!--         <item name="textStyle">@style/text_light_style</item> -->
-<!--         <item name="backgroundStyle">@style/background_light_style</item> -->
+        <item name="textStyle">@style/text_light_style</item>
+        <item name="backgroundStyle">@style/background_light_style</item>
     </style>
 
     <style name="text_light_style">
-        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textColor">@color/green</item>
     </style>
     
 	<style name="background_light_style">
-	    <item name="android:background">@android:color/background_light</item>
+	    <item name="android:background">@color/red</item>
 	</style>   
 </resources>

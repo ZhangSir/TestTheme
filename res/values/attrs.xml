@@ -4,4 +4,6 @@
     <attr name="textStyle" format="reference"/>
     <attr name="backgroundStyle" format="reference"/>
     
+    <attr name="drawableStyle" format="reference"/>
+    
 </resources>

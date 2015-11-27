@@ -3,6 +3,7 @@ package com.test.theme;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.content.res.TypedArray;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.ActionBarActivity;
@@ -13,6 +14,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 
 public class ThemeActivity extends ActionBarActivity {
 
@@ -73,6 +75,8 @@ public class ThemeActivity extends ActionBarActivity {
 
 		private Button btnSwitch;
 		
+		private ImageView ivImage;
+		
 		private SharedPreferences sp;
 		
 		public PlaceholderFragment() {
@@ -84,6 +88,13 @@ public class ThemeActivity extends ActionBarActivity {
 				Bundle savedInstanceState) {
 			View rootView = inflater.inflate(R.layout.fragment_theme,
 					container, false);
+			ivImage = (ImageView)rootView.findViewById(R.id.iv_image);
+			/*获取当前主题下，播放按钮的ResourceID*/
+			TypedArray array = getActivity().getTheme()
+					.obtainStyledAttributes(new int[] {R.attr.drawableStyle});
+			int drawableResId = array.getResourceId(0, 0);
+			ivImage.setImageResource(drawableResId);
+			
 			btnSwitch = (Button) rootView.findViewById(R.id.btn_switch);
 			btnSwitch.setOnClickListener(new OnClickListener() {
 				@Override

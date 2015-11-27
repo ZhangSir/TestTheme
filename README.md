@@ -9,6 +9,18 @@
 	最后在代码中通过context.setTheme(int resId)动态设置主题为自己创建某个主题（appTheme或appThemeLight）；
 	注意：context.setTheme(int resId)必须在Activity的setContentView()之前调用;
 	
+	XML布局文件中的调用方法：
+	style="?backgroundStyle"
+	
+	代码中的调用方法：
+		某些情况下，有些组件的属性需要在代码中进行动态设置，这个时候只依靠上面的做法无法完成主题的切换；，
+		此时需要在代码中动态读取当前的Theme对象，并通过该Theme对象与在attr中定义的属性（如drawableStyle），
+		获取当前Theme下自定义属性（drawableStyle）所链接的ResourceId，并将该ResourceId设置给对应的组件；
+		TypedArray array = getActivity().getTheme()
+					.obtainStyledAttributes(new int[] {R.attr.drawableStyle});
+		int drawableResId = array.getResourceId(0, 0);
+		ivImage.setImageResource(drawableResId);
+	
 ##通过安装主题apk包实现切换核心代码逻辑是：
 	1、查找所有与规定的主题apk包名相同的apk：
 	PackageManager pm = getActivity().getPackageManager();

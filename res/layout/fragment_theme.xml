@@ -11,6 +11,14 @@
         style="?textStyle"
         android:text="看我的颜色有没有变"/>
     
+    <ImageView 
+        android:id="@+id/iv_image"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:background="@null"
+        android:scaleType="centerCrop"
+        android:contentDescription="@null"/>
+    
     <Button
         android:id="@+id/btn_switch"
         android:layout_width="wrap_content"

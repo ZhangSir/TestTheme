@@ -16,6 +16,7 @@
     <style name="AppTheme" parent="AppBaseTheme">
         <item name="textStyle">@style/text_style</item>
         <item name="backgroundStyle">@style/background_style</item>
+        <item name="drawableStyle">@drawable/ic_download_play</item>
     </style>
 
     <style name="text_style">
@@ -33,6 +34,7 @@
     <style name="AppThemeLight" parent="AppBaseTheme">
         <item name="textStyle">@style/text_light_style</item>
         <item name="backgroundStyle">@style/background_light_style</item>
+        <item name="drawableStyle">@drawable/ic_download_play_green</item>
     </style>
 
     <style name="text_light_style">
